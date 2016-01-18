@@ -49,9 +49,9 @@ class Host:
         return hash(self.name)
 
     def serialize(self):
-        groups = []
+        groups = set()
         for group in self.groups:
-            groups.append(group.serialize())
+            groups.add(group.serialize())
 
         return dict(
             name=self.name,
@@ -74,13 +74,13 @@ class Host:
         for group_data in groups:
             g = Group()
             g.deserialize(group_data)
-            self.groups.append(g)
+            self.groups.add(g)
 
     def __init__(self, name=None, port=None):
 
         self.name = name
         self.vars = {}
-        self.groups = []
+        self.groups = set()
 
         self.address = name
 
@@ -105,7 +105,7 @@ class Host:
 
     def add_group(self, group):
 
-        self.groups.append(group)
+        self.groups.add(group)
 
     def set_variable(self, key, value):
 
