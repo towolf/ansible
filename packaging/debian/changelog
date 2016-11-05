@@ -1,8 +1,8 @@
 ansible (%VERSION%-%RELEASE%~%DIST%) %DIST%; urgency=low
 
-  * %VERSION% release
+  * %VERSION% release, plus group cache patch
 
- -- Ansible, Inc. <support@ansible.com>  %DATE%
+ -- Tobias Wolf <tobias.wolf@gameforge.com>  %DATE%
 
 ansible (1.9.6) unstable; urgency=low
 
