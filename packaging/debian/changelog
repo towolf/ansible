@@ -1,8 +1,8 @@
 ansible (%VERSION%-%RELEASE%~%DIST%) %DIST%; urgency=low
 
-  * %VERSION% release
+  * %VERSION% stable snapshot
 
- -- Ansible, Inc. <info@ansible.com>  %DATE%
+ -- Tobias Wolf <tobias.wolf@gameforge.com>  %DATE%
 
 ansible (2.2.0.0) unstable; urgency=low
 
